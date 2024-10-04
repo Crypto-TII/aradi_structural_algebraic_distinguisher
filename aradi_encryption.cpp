@@ -5,15 +5,7 @@
 #include <cstdint>
 #include <random>
 bool last_linear_layer = true;
-
 using namespace std;
-string toBinaryString(unsigned int value) {
-    string binary = "";
-    for (int i = 31; i >= 0; --i) {
-        binary += ((value >> i) & 1) ? '1' : '0';
-    }
-    return binary;
-}
 
 //==============Left circular shift=================
 uint32_t left_circular_shift(uint32_t x, int shift) {
